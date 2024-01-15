@@ -1,14 +1,14 @@
 package ru.netology.javaqa;
 
-public class posterManager {
+public class PosterManager {
     private String[] moviesList = new String[0];
     private int limit;
 
-    public posterManager(int limit) {
+    public PosterManager(int limit) {
         this.limit = limit;
     }
 
-    public posterManager() {
+    public PosterManager() {
         limit = 5;
     }
 
