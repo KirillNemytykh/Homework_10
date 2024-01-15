@@ -1,3 +1,5 @@
+package ru.netology.javaqa;
+
 public class posterManager {
     private String[] moviesList = new String[0];
     private int limit;
@@ -5,6 +7,7 @@ public class posterManager {
     public posterManager(int limit) {
         this.limit = limit;
     }
+
     public posterManager() {
         limit = 5;
     }
@@ -14,7 +17,7 @@ public class posterManager {
         for (int i = 0; i < moviesList.length; i++) {
             tmp[i] = moviesList[i];
         }
-        tmp[tmp.length -1] = movie;
+        tmp[tmp.length - 1] = movie;
         moviesList = tmp;
     }
 
@@ -26,12 +29,11 @@ public class posterManager {
         int resultLength;
         if (limit < moviesList.length) {
             resultLength = limit;
-        }
-        else {
+        } else {
             resultLength = moviesList.length;
         }
         String[] result = new String[resultLength];
-        for (int i = 0; i < resultLength; i++){
+        for (int i = 0; i < resultLength; i++) {
             result[i] = moviesList[moviesList.length - 1 - i];
         }
         return result;
